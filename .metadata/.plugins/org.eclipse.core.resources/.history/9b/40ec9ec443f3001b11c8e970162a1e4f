@@ -1,0 +1,13 @@
+package com.day.control;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+//서비스, 레퍼지토리, 컨트롤러 테스트 시 @WebMvcTest어노테이션 사용
+@WebMvcTest(SampleController.class)
+public class SampleControllerTest {
+	@Test
+	public void a() {
+		
+	}
+}
