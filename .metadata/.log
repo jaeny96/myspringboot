@@ -6358,3 +6358,4590 @@ java.lang.InterruptedException
 
 !ENTRY Activator 1 0 2021-08-02 14:49:17.011
 !MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:55:18.428
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:55:19.025
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:09.353
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:09.950
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:35.555
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:36.171
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:53.460
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 14:56:54.064
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-08-02 15:10:07.272
+!MESSAGE Connection to http://marketplace.eclipse.org/catalogs/api/p failed on null. Retry attempt 0 started
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 6 more
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2021-08-02 15:10:10.155
+!MESSAGE Cannot open Eclipse Marketplace
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot install remote marketplace locations: Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.createConfiguration(AbstractMarketplaceWizardCommand.java:105)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.createConfiguration(MarketplaceWizardCommand.java:64)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:67)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:319)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:253)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:200)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	... 5 more
+	Suppressed: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/catalogs/api/p.
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:196)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:131)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: org.apache.http.client.ClientProtocolException
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		... 6 more
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 7 more
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+Contains: Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+	Suppressed: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/catalogs/api/p.
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:196)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:131)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: org.apache.http.client.ClientProtocolException
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		... 6 more
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 7 more
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+Contains: 
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.159
+!MESSAGE Cannot install remote marketplace locations: Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:200)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	... 5 more
+	Suppressed: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/catalogs/api/p.
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:196)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:131)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: org.apache.http.client.ClientProtocolException
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		... 6 more
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 7 more
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.167
+!MESSAGE Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+	Suppressed: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/catalogs/api/p.
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:196)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:131)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: org.apache.http.client.ClientProtocolException
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		... 6 more
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 7 more
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+Contains: 
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 3 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.168
+!MESSAGE 
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 4 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.168
+!MESSAGE 
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.168
+!MESSAGE Cannot complete request to http://marketplace.eclipse.org/catalogs/api/p: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+	Suppressed: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/catalogs/api/p.
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:196)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:131)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: org.apache.http.client.ClientProtocolException
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+		at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+		at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		... 6 more
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 7 more
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+Contains: 
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 3 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.168
+!MESSAGE 
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+!SUBENTRY 4 org.eclipse.epp.mpc.core 4 0 2021-08-02 15:10:10.169
+!MESSAGE 
+!STACK 0
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:187)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:82)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:74)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:41)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.apache.http.client.CircularRedirectException: Circular redirect to 'http://marketplace.eclipse.org/install.php'
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(DefaultRedirectStrategy.java:193)
+	at org.apache.http.impl.client.DefaultRedirectStrategy.getRedirect(DefaultRedirectStrategy.java:223)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:126)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	... 13 more
+
+!ENTRY Activator 1 0 2021-08-02 15:19:20.849
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:19:21.926
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:19:51.442
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:19:52.052
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:20:53.310
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:20:53.957
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:22:25.871
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:22:26.868
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:23:23.093
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:23:23.702
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:24:35.813
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:24:36.412
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:26:29.501
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:26:30.113
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:26:51.182
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:26:51.779
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:30:18.402
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:30:19.024
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:36:09.925
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:36:10.539
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:36:26.500
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 15:36:27.102
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:48.930
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:49.127
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:52.584
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:52.652
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:52.944
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.025
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.052
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.053
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.054
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.055
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.133
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.171
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.401
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.403
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.416
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.426
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.427
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:53.469
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.701
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.820
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:53.868
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2021-08-02 16:43:53.929
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2021-08-02 16:43:53.931
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.preview.adapter.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2021-08-02 16:43:53.932
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.tomcat.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2021-08-02 16:43:53.933
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.wst.server.http.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2021-08-02 16:43:53.934
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.wst.server.preview.adapter.
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.495
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.495
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.496
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.506
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.516
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.517
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.557
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.589
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.594
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.874
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.875
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.878
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.890
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.900
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:54.902
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.971
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:54.972
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.023
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:55.126
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.127
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 16:43:55.128
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.139
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.149
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.150
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:55.196
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:55.223
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:55.239
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.292
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.293
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.695
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.696
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.844
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:56.845
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 16:43:56.846
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:56.855
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:56.863
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:56.864
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.023
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.163
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.164
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.278
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.290
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.299
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.300
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.352
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.550
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.605
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.635
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.868
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.868
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 16:43:57.869
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.878
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.887
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.888
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 16:43:57.930
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 16:43:58.025
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:58.028
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:58.108
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:58.112
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:59.900
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:43:59.901
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:00.008
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:00.020
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:00.087
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:00.094
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:00.183
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:01.757
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:01.757
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:04.544
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:04.545
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:45.330
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:45.332
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:45.472
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:44:45.477
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.eclipse.jface 2 0 2021-08-02 16:44:46.686
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-02 16:44:46.687
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3515310c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@264d4a82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY Activator 1 0 2021-08-02 16:45:03.535
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:03.536
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:04.179
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:04.184
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:21.000
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:21.001
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:29.441
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:29.442
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.508
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.508
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.602
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.607
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.726
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:50.727
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:52.837
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:52.838
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:52.953
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:52.961
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.477
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.478
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.632
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.634
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.768
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:53.770
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.170
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.173
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.293
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.299
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.468
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.470
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.600
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:54.606
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:56.777
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:56.779
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:56.951
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:56.955
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.064
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.064
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.224
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.225
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.409
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.410
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.552
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.553
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.730
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.731
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.896
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:57.898
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:58.210
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:45:58.212
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:02.673
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:02.675
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:07.682
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:07.686
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:07.774
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:07.777
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:08.815
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:08.818
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:08.968
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:08.971
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:09.491
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:09.494
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.329
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.330
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.472
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.473
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.631
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.632
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.799
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.800
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.974
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:10.975
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:11.117
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:11.118
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:11.940
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:11.940
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.035
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.041
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.377
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.379
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.664
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:12.667
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.105
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.108
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.604
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.606
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.727
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.732
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.799
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.805
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.871
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.875
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.951
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:13.955
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:14.022
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:14.026
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:49.537
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:49.538
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:49.671
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:49.672
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:53.381
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:53.382
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:53.836
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:53.837
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.683
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.685
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.789
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.789
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.940
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:58.947
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.064
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.065
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.538
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.540
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.695
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.696
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.870
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:46:59.870
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.136
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.137
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.254
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.255
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.358
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.359
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.606
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.607
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.722
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.729
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.871
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.872
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.975
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:00.980
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.289
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.290
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.644
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.644
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.856
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:01.859
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:02.002
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:02.006
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:02.493
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:02.494
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:08.576
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:08.578
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:10.818
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:10.819
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:15.553
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:15.554
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:15.700
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:15.700
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:32.564
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:32.566
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:32.711
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:32.712
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:33.112
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:33.114
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:33.309
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:33.310
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.202
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.204
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.701
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.702
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.840
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.844
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.919
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:38.920
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:39.786
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:39.787
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:40.098
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:40.101
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:40.983
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:40.984
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.129
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.130
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.375
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.378
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.536
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:41.543
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.294
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.297
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.413
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.414
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.812
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.815
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.944
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:42.951
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.043
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.044
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.150
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.151
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.242
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.243
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.326
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.332
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.414
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.415
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.493
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.496
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.556
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:43.561
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.291
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.294
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.412
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.415
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.480
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.484
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.582
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.583
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.671
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:44.676
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:45.987
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:45.988
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.503
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.503
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.593
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.595
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.798
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:48.802
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.008
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.009
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.206
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.207
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.305
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.305
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.743
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.746
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.942
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:49.943
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:50.150
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:50.151
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:50.803
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:50.804
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:51.663
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:51.665
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.206
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.208
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.297
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.297
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.503
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.505
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.716
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:53.717
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:55.139
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:55.140
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:55.472
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:55.474
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.519
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.521
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.800
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.803
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.983
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:56.983
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:57.838
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:57.838
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.156
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.158
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.314
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.316
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.468
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.469
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.617
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:58.618
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.465
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.466
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.549
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.556
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.923
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:47:59.927
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.692
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.693
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.796
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.802
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.964
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:00.966
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.095
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.102
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.167
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.172
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.377
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:01.378
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:02.614
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:02.614
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:03.272
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:03.273
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:04.500
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:04.502
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:04.609
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:04.610
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:05.882
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:05.883
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:11.921
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:11.923
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.068
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.069
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.615
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.617
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.818
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.820
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.973
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:12.975
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:13.559
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:13.561
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:13.763
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:13.768
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:14.260
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:14.261
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:16.796
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:16.797
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:16.947
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:16.948
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:17.438
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:17.439
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:17.570
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:17.571
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.522
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.524
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.719
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.720
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.986
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:18.988
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.115
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.117
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.282
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.283
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.390
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.391
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.912
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:19.915
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.213
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.214
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.294
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.299
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.367
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:20.371
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:24.858
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:24.859
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:26.742
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:26.742
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:26.882
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:26.883
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.029
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.029
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.228
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.232
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.422
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.423
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.604
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.605
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.780
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:27.781
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.472
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.474
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.613
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.617
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.797
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:28.800
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.536
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.537
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.615
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.618
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.833
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:29.835
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:30.416
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:30.417
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:31.285
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:31.286
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.063
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.064
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.478
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.479
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.588
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.589
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.727
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.728
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.820
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:32.825
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:33.620
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:33.621
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.478
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.479
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.695
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.696
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.886
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:40.887
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.351
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.351
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.815
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.816
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.926
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:41.927
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.145
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.146
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.471
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.472
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.994
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:42.995
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.168
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.169
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.313
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.314
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.708
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:43.709
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.392
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.393
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.566
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.567
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.711
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.712
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.887
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.888
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.991
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:46.992
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:47.197
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:47.198
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.207
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.207
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.368
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.369
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.539
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.540
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.659
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.660
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.809
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.810
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.935
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:48.936
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:50.771
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:50.772
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:59.220
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:59.222
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:59.712
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:48:59.713
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.071
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.072
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.173
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.180
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.421
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.422
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.561
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.562
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.726
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.727
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.836
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.837
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.940
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:00.940
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.062
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.063
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.148
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.153
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.224
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.228
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.300
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.302
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.382
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.387
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.452
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.455
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.521
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.525
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.656
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.657
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.748
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.753
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.820
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.821
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.900
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.906
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.971
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:01.976
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:02.047
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:02.048
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:02.132
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:02.137
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.703
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.704
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.793
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.797
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.890
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:12.895
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.105
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.108
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.246
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.250
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.518
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.518
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.600
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:13.604
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.172
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.174
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.316
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.317
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.483
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.484
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.681
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.684
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.838
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.844
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.932
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:27.933
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.112
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.115
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.270
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.276
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.632
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.634
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.759
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:28.763
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.053
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.056
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.460
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.461
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.710
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.711
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.798
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.799
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.902
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:29.903
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.650
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.651
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.738
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.742
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.805
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:30.809
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:31.654
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:31.654
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:45.133
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:45.134
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:45.781
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:45.782
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:51.726
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:51.727
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:51.879
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:51.880
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.029
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.029
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.364
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.366
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.630
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.633
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.768
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.773
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.902
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:52.902
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.070
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.071
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.677
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.678
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.922
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:53.925
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.477
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.478
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.621
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.622
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.717
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:54.718
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.284
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.285
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.412
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.414
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.547
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.556
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.621
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.625
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.698
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.703
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:49:55.764
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:15.166
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:15.167
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.348
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.349
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.486
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.487
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.608
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.609
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.817
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.820
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.956
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:17.960
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:18.106
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:18.107
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:18.909
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:18.910
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:19.246
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:19.247
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.270
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.271
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.398
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.398
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.469
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.474
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.690
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:20.692
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.445
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.447
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.634
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.639
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.726
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.727
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.896
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.897
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:21.999
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:22.005
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:22.312
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:22.313
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.517
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.518
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.591
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.594
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.714
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.715
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.807
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.808
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.892
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.896
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.976
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:25.977
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.110
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.111
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.227
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.232
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.297
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.298
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.371
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.375
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.439
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.443
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.568
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.569
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.647
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.651
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.717
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.721
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.787
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:26.790
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.028
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.029
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.136
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.137
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.295
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.296
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.440
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.445
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.596
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.597
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.856
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:27.858
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:44.958
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:44.960
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.082
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.083
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.186
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.187
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.358
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.359
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.580
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.583
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.709
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:45.713
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.606
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.607
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.698
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.700
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.832
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:46.834
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.386
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.388
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.534
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.535
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.723
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.723
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.842
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:47.844
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:48.969
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:48.970
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:49.253
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:49.255
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:49.410
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:49.412
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.078
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.078
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.452
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.453
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.697
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:50.697
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:51.176
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:51.177
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:51.302
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:51.304
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.433
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.434
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.632
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.633
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.745
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:52.746
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.054
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.056
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.241
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.245
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.499
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:53.501
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:56.542
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:56.543
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:57.650
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:57.651
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.380
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.381
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.727
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.729
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.868
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.874
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.978
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:58.979
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:59.874
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:50:59.876
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.197
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.198
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.358
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.359
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.592
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.594
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.751
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:03.752
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.188
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.191
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.558
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.559
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.638
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:04.642
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:05.598
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:05.599
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:05.787
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:05.788
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:08.894
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:08.894
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:09.315
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:09.316
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:10.994
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:10.995
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.154
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.155
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.285
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.290
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.482
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.483
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.622
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.624
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.757
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.758
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.886
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:11.890
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.450
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.451
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.540
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.546
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.700
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.701
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.914
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:12.916
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.441
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.444
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.563
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.567
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.722
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.724
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.876
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.879
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.941
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:13.945
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:16.914
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:16.915
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:48.278
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:51:48.279
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:16.248
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:16.249
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:16.420
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:16.421
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:23.453
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:23.454
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:23.910
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:23.911
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:37.481
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:37.482
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:38.246
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:52:38.247
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:00.439
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:00.440
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:00.723
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:00.725
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:08.776
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:08.776
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:08.984
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:08.985
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:13.029
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:13.030
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:21.815
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:21.816
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:21.953
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:53:21.955
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.405
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.406
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.551
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.552
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.632
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.636
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.704
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.708
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.776
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.779
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.872
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.873
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.951
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:02.956
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.067
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.068
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.201
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.202
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.335
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.335
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.494
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.496
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.817
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.819
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.924
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:03.930
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.056
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.057
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.322
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.324
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.445
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.451
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.640
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.642
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.788
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:04.793
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.267
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.268
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.826
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.827
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.928
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:05.929
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.136
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.137
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.303
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.304
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.436
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.437
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.563
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.564
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.905
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:06.907
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.314
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.315
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.455
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.456
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.575
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.578
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.776
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.778
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.926
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:08.931
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:10.428
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:10.428
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:17.823
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:17.824
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:17.962
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:17.964
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:27.805
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:27.806
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:27.932
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:27.933
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.108
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.108
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.189
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.190
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.533
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.535
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.691
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.696
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.756
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.760
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.912
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:28.913
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:29.536
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:29.537
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:29.884
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:55:29.885
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:56:00.350
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:56:00.350
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:56:01.145
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:56:01.146
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:58:05.220
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 16:58:05.221
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:58:05.852
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 16:58:05.902
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:00:22.280
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:00:22.281
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:00:45.033
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:00:45.033
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:34.814
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:34.816
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.047
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.051
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.209
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.210
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.385
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.386
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.517
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.518
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.706
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.706
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.939
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:35.940
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.472
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.474
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.701
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.702
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.834
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:36.838
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:37.164
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:37.166
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:37.371
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:37.372
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:38.056
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:38.057
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:38.531
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:38.531
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:39.339
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:39.340
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:39.733
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:39.734
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:40.307
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:40.309
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:40.769
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:40.771
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.079
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.080
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.181
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.182
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.340
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.340
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.428
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:41.432
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:42.353
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:42.354
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:44.658
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:44.660
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:44.806
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:01:44.806
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:01.439
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:01.440
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:01.579
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:01.580
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:23.949
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:23.950
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:24.454
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:24.455
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:38.514
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:38.515
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:38.957
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:38.958
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:54.595
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:54.595
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:55.127
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:02:55.129
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:03:23.424
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:03:23.434
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:03:23.443
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:03:23.444
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:03:23.459
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:23.460
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:03:23.504
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 17:03:24.146
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:24.154
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:24.242
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:24.245
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:50.880
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:03:50.881
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:04:46.312
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:04:46.312
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:04:46.452
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:04:46.452
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:05:17.834
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:05:17.835
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:05:17.971
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:05:17.972
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:38:29.771
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:38:29.773
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.300
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.303
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.601
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.603
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.732
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:05.739
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:06.422
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:06.423
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:06.592
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:06.599
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.611
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.612
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.765
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.775
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:07.865
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:07.866
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:07.868
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:07.869
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.874
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:07.882
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.352
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.538
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.542
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.710
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.769
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.770
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:08.799
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.370
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.372
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.373
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.565
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.571
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.664
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.872
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.872
+!MESSAGE executing callback sts4.classpath.vdIkMtSr FAILED
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.873
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:09.874
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-08-02 17:39:09.875
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.876
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.886
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.895
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.896
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.906
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.915
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.916
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.925
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.935
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:09.935
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 3 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.033
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.033
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.040
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.214
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.217
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.218
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.560
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.567
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:10.568
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.321
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.322
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.323
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.797
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.798
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:11.800
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:11.940
+!MESSAGE executing callback sts4.classpath.vdIkMtSr FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-08-02 17:39:11.942
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:11.946
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:11.979
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:12.006
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:12.009
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.184
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.184
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.185
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.425
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.426
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.430
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.887
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.890
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.901
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.986
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:12.991
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.262
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.263
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.266
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.443
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.512
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.514
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.515
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.519
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.532
+!MESSAGE classpath=66 entries
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.545
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.546
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.548
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.561
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.574
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.575
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.590
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.602
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.604
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 3 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.660
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.668
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.678
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.820
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.821
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:13.829
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:39:13.917
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 17:39:14.544
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:14.545
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:39:14.546
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.541
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.543
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.544
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.719
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.721
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:17.728
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:21.071
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:21.072
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:21.073
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.144
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.145
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.146
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.146
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.155
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.163
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.164
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.218
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.829
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.842
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.851
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.852
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.913
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:40:33.915
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.916
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:33.924
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.120
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.122
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.122
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.758
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.759
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:40:34.760
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:30.962
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:30.962
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:30.963
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:31.132
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:31.133
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:41:31.137
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:18.521
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:18.522
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:18.524
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:20.203
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:20.208
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:50:20.210
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:48.618
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:48.621
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:48.623
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:49.204
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:49.206
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:51:49.209
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.285
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.287
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.288
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.496
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.497
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:09.503
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.620
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.624
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.625
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.836
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.838
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:52:18.843
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.039
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.042
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.045
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.799
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.800
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:53:53.806
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:54:27.799
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:54:27.800
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:54:27.801
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.064
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.065
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.066
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.068
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.079
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.090
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.091
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.153
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.781
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.794
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.807
+!MESSAGE buffering callback sts4.classpath.vdIkMtSr demologback-xml false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.807
+!MESSAGE executing callback sts4.classpath.vdIkMtSr 1 batched events
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.858
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.859
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:55:58.866
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-02 17:55:58.886
+!MESSAGE executing callback sts4.classpath.vdIkMtSr SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-02 17:55:59.045
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:55:59.046
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:00.543
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:00.545
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:00.546
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.649
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.652
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.655
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.867
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.868
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:56:30.875
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.129
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.130
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.131
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.370
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.371
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:22.395
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.193
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.194
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.195
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.378
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.378
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:57:41.385
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.244
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.247
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.250
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.480
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.481
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:00.487
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.611
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.613
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.616
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.970
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.972
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:25.973
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:49.167
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:49.168
+!MESSAGE Has main method computation for project 'demologback'
+
+!ENTRY Activator 1 0 2021-08-02 17:58:49.169
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:59:10.526
+!MESSAGE Has main method computation for project 'demo'
+
+!ENTRY Activator 1 0 2021-08-02 17:59:10.527
+!MESSAGE Has main method computation for project 'demologback-xml'
+
+!ENTRY Activator 1 0 2021-08-02 17:59:10.528
+!MESSAGE Has main method computation for project 'demologback'

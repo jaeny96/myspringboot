@@ -4,9 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -46,6 +43,7 @@ class SampleControllerTest {
 		MockHttpServletRequestBuilder requestBuilder;
 		requestBuilder = MockMvcRequestBuilders.post("/add");
 		requestBuilder.accept(MediaType.APPLICATION_JSON); //요청 형식 지정
+		requestBuilder.contentType(MediaType.APPLICATION_JSON);
 		requestBuilder.content("{\"id\":\"id1\"}");
 		ResultActions resultActions = mockMvc.perform(requestBuilder);
 		
