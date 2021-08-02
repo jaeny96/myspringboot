@@ -1,0 +1,8 @@
+package com.day.control;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SampleController {
+@GetMapping("/hello")	
+}
